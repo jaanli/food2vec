@@ -1,0 +1,3 @@
+[submodule "src/sentence_word2vec"]
+	path = src/sentence_word2vec
+	url = git@github.com:altosaar/sentence_word2vec.git
