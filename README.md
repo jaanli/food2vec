@@ -5,9 +5,7 @@ Food vectors.
 Get the data and preprocess it:
 ```
 cd dat
-wget http://www.nature.com/article-assets/npg/srep/2011/111215/srep00196/extref/srep00196-s3.zip
-unzip srep00196-s3.zip
-cd ../src
+./download_data.sh
 ./preprocess_data.sh
 ```
 
