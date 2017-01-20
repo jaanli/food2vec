@@ -22,6 +22,7 @@ def write_to_js(words, embeddings, path):
   for word, embedding in zip(words, embeddings):
     word_vecs[word] = embedding.tolist()
   with open(path, 'wb') as f:
+    f.write('var wordVecs=')
     json.dump(word_vecs, f)
     f.write(';')
 
@@ -35,7 +36,7 @@ def main():
   words = words[1:]
   nemb = nemb[1:]
   # lower precision, faster
-  nemb = nemb.astype(np.float16)
+  # nemb = nemb.astype(np.float16)
   write_to_js(words, nemb[1:], path='../../word2vecjson/data/foodVecs.js')
 
 if __name__ == '__main__':
