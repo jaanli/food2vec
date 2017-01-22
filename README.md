@@ -1,5 +1,5 @@
 # food2vec
-Food vectors.
+Food vectors. Live demo at [https://altosaar.github.io/food2vec/](https://altosaar.github.io/food2vec/), blog post with more information and pretty plots here: https://jaan.io/food2vec-augmented-cooking-machine-intelligence/
 
 ## Data
 Get the data and preprocess it:
@@ -31,3 +31,12 @@ jupyter notebook ./src/plot_ingredients_recipes.ipynb
 # view the analogy tool on a browser
 open index.html
 ```
+
+## Contributing
+
+Pull requests and all feedback welcome! Please file an issue if you run into problems replicating the results.
+
+TODOs:
+* fit a better model (e.g. the exact multi-class regression implemented in this repo at [https://github.com/altosaar/food2vec/blob/master/src/food2vec.py](https://github.com/altosaar/food2vec/blob/master/src/food2vec.py))
+* compare the above model embeddings to the `word2vec_optimized.py` embeddings
+* make the UI of the website more user-friendly and mobile-friendly
