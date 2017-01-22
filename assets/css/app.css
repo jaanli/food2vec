@@ -1,0 +1,17 @@
+/* :styles General*/
+.banner-header {
+  background: #03a9f4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #ffffff; }
+
+.collapsible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+pre, pre code {
+  white-space: pre-wrap; }
+
+/* :end styles*/

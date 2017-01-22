@@ -1,0 +1,1390 @@
+[
+    {
+        "text": "Egg", 
+        "value": "egg"
+    }, 
+    {
+        "text": "Wheat", 
+        "value": "wheat"
+    }, 
+    {
+        "text": "Butter", 
+        "value": "butter"
+    }, 
+    {
+        "text": "Onion", 
+        "value": "onion"
+    }, 
+    {
+        "text": "Garlic", 
+        "value": "garlic"
+    }, 
+    {
+        "text": "Milk", 
+        "value": "milk"
+    }, 
+    {
+        "text": "Vegetable oil", 
+        "value": "vegetable_oil"
+    }, 
+    {
+        "text": "Cream", 
+        "value": "cream"
+    }, 
+    {
+        "text": "Tomato", 
+        "value": "tomato"
+    }, 
+    {
+        "text": "Olive oil", 
+        "value": "olive_oil"
+    }, 
+    {
+        "text": "Black pepper", 
+        "value": "black_pepper"
+    }, 
+    {
+        "text": "Pepper", 
+        "value": "pepper"
+    }, 
+    {
+        "text": "Vanilla", 
+        "value": "vanilla"
+    }, 
+    {
+        "text": "Cayenne", 
+        "value": "cayenne"
+    }, 
+    {
+        "text": "Vinegar", 
+        "value": "vinegar"
+    }, 
+    {
+        "text": "Cane molasses", 
+        "value": "cane_molasses"
+    }, 
+    {
+        "text": "Bell pepper", 
+        "value": "bell_pepper"
+    }, 
+    {
+        "text": "Cinnamon", 
+        "value": "cinnamon"
+    }, 
+    {
+        "text": "Parsley", 
+        "value": "parsley"
+    }, 
+    {
+        "text": "Chicken", 
+        "value": "chicken"
+    }, 
+    {
+        "text": "Lemon juice", 
+        "value": "lemon_juice"
+    }, 
+    {
+        "text": "Beef", 
+        "value": "beef"
+    }, 
+    {
+        "text": "Cocoa", 
+        "value": "cocoa"
+    }, 
+    {
+        "text": "Corn", 
+        "value": "corn"
+    }, 
+    {
+        "text": "Bread", 
+        "value": "bread"
+    }, 
+    {
+        "text": "Scallion", 
+        "value": "scallion"
+    }, 
+    {
+        "text": "Mustard", 
+        "value": "mustard"
+    }, 
+    {
+        "text": "Ginger", 
+        "value": "ginger"
+    }, 
+    {
+        "text": "Basil", 
+        "value": "basil"
+    }, 
+    {
+        "text": "Celery", 
+        "value": "celery"
+    }, 
+    {
+        "text": "Carrot", 
+        "value": "carrot"
+    }, 
+    {
+        "text": "Potato", 
+        "value": "potato"
+    }, 
+    {
+        "text": "Chicken broth", 
+        "value": "chicken_broth"
+    }, 
+    {
+        "text": "Yeast", 
+        "value": "yeast"
+    }, 
+    {
+        "text": "Rice", 
+        "value": "rice"
+    }, 
+    {
+        "text": "Mushroom", 
+        "value": "mushroom"
+    }, 
+    {
+        "text": "Cheese", 
+        "value": "cheese"
+    }, 
+    {
+        "text": "Soy sauce", 
+        "value": "soy_sauce"
+    }, 
+    {
+        "text": "Cumin", 
+        "value": "cumin"
+    }, 
+    {
+        "text": "Oregano", 
+        "value": "oregano"
+    }, 
+    {
+        "text": "Parmesan cheese", 
+        "value": "parmesan_cheese"
+    }, 
+    {
+        "text": "Macaroni", 
+        "value": "macaroni"
+    }, 
+    {
+        "text": "Lard", 
+        "value": "lard"
+    }, 
+    {
+        "text": "Thyme", 
+        "value": "thyme"
+    }, 
+    {
+        "text": "Cheddar cheese", 
+        "value": "cheddar_cheese"
+    }, 
+    {
+        "text": "Lemon", 
+        "value": "lemon"
+    }, 
+    {
+        "text": "Cream cheese", 
+        "value": "cream_cheese"
+    }, 
+    {
+        "text": "Walnut", 
+        "value": "walnut"
+    }, 
+    {
+        "text": "Starch", 
+        "value": "starch"
+    }, 
+    {
+        "text": "Green bell pepper", 
+        "value": "green_bell_pepper"
+    }, 
+    {
+        "text": "Nutmeg", 
+        "value": "nutmeg"
+    }, 
+    {
+        "text": "Honey", 
+        "value": "honey"
+    }, 
+    {
+        "text": "Apple", 
+        "value": "apple"
+    }, 
+    {
+        "text": "Almond", 
+        "value": "almond"
+    }, 
+    {
+        "text": "Cilantro", 
+        "value": "cilantro"
+    }, 
+    {
+        "text": "Pecan", 
+        "value": "pecan"
+    }, 
+    {
+        "text": "White wine", 
+        "value": "white_wine"
+    }, 
+    {
+        "text": "Bacon", 
+        "value": "bacon"
+    }, 
+    {
+        "text": "Pork", 
+        "value": "pork"
+    }, 
+    {
+        "text": "Bean", 
+        "value": "bean"
+    }, 
+    {
+        "text": "Raisin", 
+        "value": "raisin"
+    }, 
+    {
+        "text": "Rosemary", 
+        "value": "rosemary"
+    }, 
+    {
+        "text": "Fish", 
+        "value": "fish"
+    }, 
+    {
+        "text": "Cucumber", 
+        "value": "cucumber"
+    }, 
+    {
+        "text": "Olive", 
+        "value": "olive"
+    }, 
+    {
+        "text": "Coconut", 
+        "value": "coconut"
+    }, 
+    {
+        "text": "Orange", 
+        "value": "orange"
+    }, 
+    {
+        "text": "Orange juice", 
+        "value": "orange_juice"
+    }, 
+    {
+        "text": "Tamarind", 
+        "value": "tamarind"
+    }, 
+    {
+        "text": "Vegetable", 
+        "value": "vegetable"
+    }, 
+    {
+        "text": "Buttermilk", 
+        "value": "buttermilk"
+    }, 
+    {
+        "text": "Pineapple", 
+        "value": "pineapple"
+    }, 
+    {
+        "text": "Shrimp", 
+        "value": "shrimp"
+    }, 
+    {
+        "text": "Coriander", 
+        "value": "coriander"
+    }, 
+    {
+        "text": "Bay", 
+        "value": "bay"
+    }, 
+    {
+        "text": "Lime juice", 
+        "value": "lime_juice"
+    }, 
+    {
+        "text": "Gelatin", 
+        "value": "gelatin"
+    }, 
+    {
+        "text": "Red wine", 
+        "value": "red_wine"
+    }, 
+    {
+        "text": "Pork sausage", 
+        "value": "pork_sausage"
+    }, 
+    {
+        "text": "Sesame oil", 
+        "value": "sesame_oil"
+    }, 
+    {
+        "text": "Chive", 
+        "value": "chive"
+    }, 
+    {
+        "text": "Seed", 
+        "value": "seed"
+    }, 
+    {
+        "text": "Ham", 
+        "value": "ham"
+    }, 
+    {
+        "text": "Mozzarella cheese", 
+        "value": "mozzarella_cheese"
+    }, 
+    {
+        "text": "Oat", 
+        "value": "oat"
+    }, 
+    {
+        "text": "Turmeric", 
+        "value": "turmeric"
+    }, 
+    {
+        "text": "Nut", 
+        "value": "nut"
+    }, 
+    {
+        "text": "Shallot", 
+        "value": "shallot"
+    }, 
+    {
+        "text": "Lettuce", 
+        "value": "lettuce"
+    }, 
+    {
+        "text": "Cider", 
+        "value": "cider"
+    }, 
+    {
+        "text": "Dill", 
+        "value": "dill"
+    }, 
+    {
+        "text": "Pea", 
+        "value": "pea"
+    }, 
+    {
+        "text": "Zucchini", 
+        "value": "zucchini"
+    }, 
+    {
+        "text": "Cherry", 
+        "value": "cherry"
+    }, 
+    {
+        "text": "Strawberry", 
+        "value": "strawberry"
+    }, 
+    {
+        "text": "Lime", 
+        "value": "lime"
+    }, 
+    {
+        "text": "Yogurt", 
+        "value": "yogurt"
+    }, 
+    {
+        "text": "Soybean", 
+        "value": "soybean"
+    }, 
+    {
+        "text": "Celery oil", 
+        "value": "celery_oil"
+    }, 
+    {
+        "text": "Peanut butter", 
+        "value": "peanut_butter"
+    }, 
+    {
+        "text": "Banana", 
+        "value": "banana"
+    }, 
+    {
+        "text": "Meat", 
+        "value": "meat"
+    }, 
+    {
+        "text": "Tabasco pepper", 
+        "value": "tabasco_pepper"
+    }, 
+    {
+        "text": "Milk fat", 
+        "value": "milk_fat"
+    }, 
+    {
+        "text": "Cabbage", 
+        "value": "cabbage"
+    }, 
+    {
+        "text": "Mint", 
+        "value": "mint"
+    }, 
+    {
+        "text": "Cranberry", 
+        "value": "cranberry"
+    }, 
+    {
+        "text": "Fennel", 
+        "value": "fennel"
+    }, 
+    {
+        "text": "Sage", 
+        "value": "sage"
+    }, 
+    {
+        "text": "Broccoli", 
+        "value": "broccoli"
+    }, 
+    {
+        "text": "Turkey", 
+        "value": "turkey"
+    }, 
+    {
+        "text": "Wine", 
+        "value": "wine"
+    }, 
+    {
+        "text": "Fenugreek", 
+        "value": "fenugreek"
+    }, 
+    {
+        "text": "Beef broth", 
+        "value": "beef_broth"
+    }, 
+    {
+        "text": "Grape juice", 
+        "value": "grape_juice"
+    }, 
+    {
+        "text": "Pumpkin", 
+        "value": "pumpkin"
+    }, 
+    {
+        "text": "Raspberry", 
+        "value": "raspberry"
+    }, 
+    {
+        "text": "Whole grain wheat flour", 
+        "value": "whole_grain_wheat_flour"
+    }, 
+    {
+        "text": "Lemon peel", 
+        "value": "lemon_peel"
+    }, 
+    {
+        "text": "Coffee", 
+        "value": "coffee"
+    }, 
+    {
+        "text": "Sesame seed", 
+        "value": "sesame_seed"
+    }, 
+    {
+        "text": "Avocado", 
+        "value": "avocado"
+    }, 
+    {
+        "text": "Sherry", 
+        "value": "sherry"
+    }, 
+    {
+        "text": "Sake", 
+        "value": "sake"
+    }, 
+    {
+        "text": "Feta cheese", 
+        "value": "feta_cheese"
+    }, 
+    {
+        "text": "Apricot", 
+        "value": "apricot"
+    }, 
+    {
+        "text": "Rum", 
+        "value": "rum"
+    }, 
+    {
+        "text": "Roasted sesame seed", 
+        "value": "roasted_sesame_seed"
+    }, 
+    {
+        "text": "Orange peel", 
+        "value": "orange_peel"
+    }, 
+    {
+        "text": "Squash", 
+        "value": "squash"
+    }, 
+    {
+        "text": "Crab", 
+        "value": "crab"
+    }, 
+    {
+        "text": "Marjoram", 
+        "value": "marjoram"
+    }, 
+    {
+        "text": "Peach", 
+        "value": "peach"
+    }, 
+    {
+        "text": "Swiss cheese", 
+        "value": "swiss_cheese"
+    }, 
+    {
+        "text": "Sweet potato", 
+        "value": "sweet_potato"
+    }, 
+    {
+        "text": "Shiitake", 
+        "value": "shiitake"
+    }, 
+    {
+        "text": "Radish", 
+        "value": "radish"
+    }, 
+    {
+        "text": "Fruit", 
+        "value": "fruit"
+    }, 
+    {
+        "text": "Tarragon", 
+        "value": "tarragon"
+    }, 
+    {
+        "text": "Black bean", 
+        "value": "black_bean"
+    }, 
+    {
+        "text": "Lamb", 
+        "value": "lamb"
+    }, 
+    {
+        "text": "Pear", 
+        "value": "pear"
+    }, 
+    {
+        "text": "Maple syrup", 
+        "value": "maple_syrup"
+    }, 
+    {
+        "text": "Blueberry", 
+        "value": "blueberry"
+    }, 
+    {
+        "text": "Clam", 
+        "value": "clam"
+    }, 
+    {
+        "text": "Smoke", 
+        "value": "smoke"
+    }, 
+    {
+        "text": "Peanut", 
+        "value": "peanut"
+    }, 
+    {
+        "text": "Tuna", 
+        "value": "tuna"
+    }, 
+    {
+        "text": "Kidney bean", 
+        "value": "kidney_bean"
+    }, 
+    {
+        "text": "Asparagus", 
+        "value": "asparagus"
+    }, 
+    {
+        "text": "Salmon", 
+        "value": "salmon"
+    }, 
+    {
+        "text": "Leek", 
+        "value": "leek"
+    }, 
+    {
+        "text": "Chickpea", 
+        "value": "chickpea"
+    }, 
+    {
+        "text": "Brandy", 
+        "value": "brandy"
+    }, 
+    {
+        "text": "Blue cheese", 
+        "value": "blue_cheese"
+    }, 
+    {
+        "text": "Artichoke", 
+        "value": "artichoke"
+    }, 
+    {
+        "text": "Mango", 
+        "value": "mango"
+    }, 
+    {
+        "text": "Horseradish", 
+        "value": "horseradish"
+    }, 
+    {
+        "text": "Date", 
+        "value": "date"
+    }, 
+    {
+        "text": "White bread", 
+        "value": "white_bread"
+    }, 
+    {
+        "text": "Cardamom", 
+        "value": "cardamom"
+    }, 
+    {
+        "text": "Oyster", 
+        "value": "oyster"
+    }, 
+    {
+        "text": "Cottage cheese", 
+        "value": "cottage_cheese"
+    }, 
+    {
+        "text": "Grape", 
+        "value": "grape"
+    }, 
+    {
+        "text": "Brown rice", 
+        "value": "brown_rice"
+    }, 
+    {
+        "text": "Cauliflower", 
+        "value": "cauliflower"
+    }, 
+    {
+        "text": "Cured pork", 
+        "value": "cured_pork"
+    }, 
+    {
+        "text": "Egg noodle", 
+        "value": "egg_noodle"
+    }, 
+    {
+        "text": "Beer", 
+        "value": "beer"
+    }, 
+    {
+        "text": "Hazelnut", 
+        "value": "hazelnut"
+    }, 
+    {
+        "text": "Mandarin", 
+        "value": "mandarin"
+    }, 
+    {
+        "text": "Plum", 
+        "value": "plum"
+    }, 
+    {
+        "text": "Romano cheese", 
+        "value": "romano_cheese"
+    }, 
+    {
+        "text": "Pimento", 
+        "value": "pimento"
+    }, 
+    {
+        "text": "Scallop", 
+        "value": "scallop"
+    }, 
+    {
+        "text": "Smoked sausage", 
+        "value": "smoked_sausage"
+    }, 
+    {
+        "text": "Goat cheese", 
+        "value": "goat_cheese"
+    }, 
+    {
+        "text": "Lentil", 
+        "value": "lentil"
+    }, 
+    {
+        "text": "Currant", 
+        "value": "currant"
+    }, 
+    {
+        "text": "Saffron", 
+        "value": "saffron"
+    }, 
+    {
+        "text": "Barley", 
+        "value": "barley"
+    }, 
+    {
+        "text": "Beet", 
+        "value": "beet"
+    }, 
+    {
+        "text": "Caraway", 
+        "value": "caraway"
+    }, 
+    {
+        "text": "Squid", 
+        "value": "squid"
+    }, 
+    {
+        "text": "Corn flake", 
+        "value": "corn_flake"
+    }, 
+    {
+        "text": "Anise", 
+        "value": "anise"
+    }, 
+    {
+        "text": "Roasted beef", 
+        "value": "roasted_beef"
+    }, 
+    {
+        "text": "Pistachio", 
+        "value": "pistachio"
+    }, 
+    {
+        "text": "Peanut oil", 
+        "value": "peanut_oil"
+    }, 
+    {
+        "text": "Cereal", 
+        "value": "cereal"
+    }, 
+    {
+        "text": "Cashew", 
+        "value": "cashew"
+    }, 
+    {
+        "text": "Veal", 
+        "value": "veal"
+    }, 
+    {
+        "text": "Seaweed", 
+        "value": "seaweed"
+    }, 
+    {
+        "text": "Sauerkraut", 
+        "value": "sauerkraut"
+    }, 
+    {
+        "text": "Turnip", 
+        "value": "turnip"
+    }, 
+    {
+        "text": "Berry", 
+        "value": "berry"
+    }, 
+    {
+        "text": "Kelp", 
+        "value": "kelp"
+    }, 
+    {
+        "text": "Tomato juice", 
+        "value": "tomato_juice"
+    }, 
+    {
+        "text": "Cod", 
+        "value": "cod"
+    }, 
+    {
+        "text": "Provolone cheese", 
+        "value": "provolone_cheese"
+    }, 
+    {
+        "text": "Rhubarb", 
+        "value": "rhubarb"
+    }, 
+    {
+        "text": "Roasted peanut", 
+        "value": "roasted_peanut"
+    }, 
+    {
+        "text": "Blackberry", 
+        "value": "blackberry"
+    }, 
+    {
+        "text": "Mussel", 
+        "value": "mussel"
+    }, 
+    {
+        "text": "Corn grit", 
+        "value": "corn_grit"
+    }, 
+    {
+        "text": "Citrus", 
+        "value": "citrus"
+    }, 
+    {
+        "text": "Chinese cabbage", 
+        "value": "chinese_cabbage"
+    }, 
+    {
+        "text": "Bourbon whiskey", 
+        "value": "bourbon_whiskey"
+    }, 
+    {
+        "text": "Chicory", 
+        "value": "chicory"
+    }, 
+    {
+        "text": "Melon", 
+        "value": "melon"
+    }, 
+    {
+        "text": "Lima bean", 
+        "value": "lima_bean"
+    }, 
+    {
+        "text": "Whiskey", 
+        "value": "whiskey"
+    }, 
+    {
+        "text": "Lovage", 
+        "value": "lovage"
+    }, 
+    {
+        "text": "Tequila", 
+        "value": "tequila"
+    }, 
+    {
+        "text": "Peppermint", 
+        "value": "peppermint"
+    }, 
+    {
+        "text": "Parsnip", 
+        "value": "parsnip"
+    }, 
+    {
+        "text": "Fig", 
+        "value": "fig"
+    }, 
+    {
+        "text": "Lemongrass", 
+        "value": "lemongrass"
+    }, 
+    {
+        "text": "Watercress", 
+        "value": "watercress"
+    }, 
+    {
+        "text": "Rye flour", 
+        "value": "rye_flour"
+    }, 
+    {
+        "text": "Savory", 
+        "value": "savory"
+    }, 
+    {
+        "text": "Lobster", 
+        "value": "lobster"
+    }, 
+    {
+        "text": "Roasted pork", 
+        "value": "roasted_pork"
+    }, 
+    {
+        "text": "Mace", 
+        "value": "mace"
+    }, 
+    {
+        "text": "Endive", 
+        "value": "endive"
+    }, 
+    {
+        "text": "Grapefruit", 
+        "value": "grapefruit"
+    }, 
+    {
+        "text": "Brassica", 
+        "value": "brassica"
+    }, 
+    {
+        "text": "Watermelon", 
+        "value": "watermelon"
+    }, 
+    {
+        "text": "Porcini", 
+        "value": "porcini"
+    }, 
+    {
+        "text": "Enokidake", 
+        "value": "enokidake"
+    }, 
+    {
+        "text": "Kiwi", 
+        "value": "kiwi"
+    }, 
+    {
+        "text": "Wasabi", 
+        "value": "wasabi"
+    }, 
+    {
+        "text": "Macadamia nut", 
+        "value": "macadamia_nut"
+    }, 
+    {
+        "text": "Lime peel oil", 
+        "value": "lime_peel_oil"
+    }, 
+    {
+        "text": "Okra", 
+        "value": "okra"
+    }, 
+    {
+        "text": "Tea", 
+        "value": "tea"
+    }, 
+    {
+        "text": "Popcorn", 
+        "value": "popcorn"
+    }, 
+    {
+        "text": "Smoked salmon", 
+        "value": "smoked_salmon"
+    }, 
+    {
+        "text": "Champagne wine", 
+        "value": "champagne_wine"
+    }, 
+    {
+        "text": "Kale", 
+        "value": "kale"
+    }, 
+    {
+        "text": "Brussels sprout", 
+        "value": "brussels_sprout"
+    }, 
+    {
+        "text": "Rye bread", 
+        "value": "rye_bread"
+    }, 
+    {
+        "text": "Star anise", 
+        "value": "star_anise"
+    }, 
+    {
+        "text": "Thai pepper", 
+        "value": "thai_pepper"
+    }, 
+    {
+        "text": "Yam", 
+        "value": "yam"
+    }, 
+    {
+        "text": "Anise seed", 
+        "value": "anise_seed"
+    }, 
+    {
+        "text": "Bitter orange", 
+        "value": "bitter_orange"
+    }, 
+    {
+        "text": "Wheat bread", 
+        "value": "wheat_bread"
+    }, 
+    {
+        "text": "Root", 
+        "value": "root"
+    }, 
+    {
+        "text": "Buckwheat", 
+        "value": "buckwheat"
+    }, 
+    {
+        "text": "Catfish", 
+        "value": "catfish"
+    }, 
+    {
+        "text": "Gin", 
+        "value": "gin"
+    }, 
+    {
+        "text": "Cognac", 
+        "value": "cognac"
+    }, 
+    {
+        "text": "Nira", 
+        "value": "nira"
+    }, 
+    {
+        "text": "Potato chip", 
+        "value": "potato_chip"
+    }, 
+    {
+        "text": "Rose", 
+        "value": "rose"
+    }, 
+    {
+        "text": "Lavender", 
+        "value": "lavender"
+    }, 
+    {
+        "text": "Oatmeal", 
+        "value": "oatmeal"
+    }, 
+    {
+        "text": "Red kidney bean", 
+        "value": "red_kidney_bean"
+    }, 
+    {
+        "text": "Matsutake", 
+        "value": "matsutake"
+    }, 
+    {
+        "text": "Chervil", 
+        "value": "chervil"
+    }, 
+    {
+        "text": "Truffle", 
+        "value": "truffle"
+    }, 
+    {
+        "text": "Chicken liver", 
+        "value": "chicken_liver"
+    }, 
+    {
+        "text": "Nectarine", 
+        "value": "nectarine"
+    }, 
+    {
+        "text": "Katsuobushi", 
+        "value": "katsuobushi"
+    }, 
+    {
+        "text": "Bone oil", 
+        "value": "bone_oil"
+    }, 
+    {
+        "text": "Port wine", 
+        "value": "port_wine"
+    }, 
+    {
+        "text": "Sour cherry", 
+        "value": "sour_cherry"
+    }, 
+    {
+        "text": "Sour milk", 
+        "value": "sour_milk"
+    }, 
+    {
+        "text": "Papaya", 
+        "value": "papaya"
+    }, 
+    {
+        "text": "Octopus", 
+        "value": "octopus"
+    }, 
+    {
+        "text": "Tangerine", 
+        "value": "tangerine"
+    }, 
+    {
+        "text": "Mackerel", 
+        "value": "mackerel"
+    }, 
+    {
+        "text": "Gruyere cheese", 
+        "value": "gruyere_cheese"
+    }, 
+    {
+        "text": "Liver", 
+        "value": "liver"
+    }, 
+    {
+        "text": "Palm", 
+        "value": "palm"
+    }, 
+    {
+        "text": "Black tea", 
+        "value": "black_tea"
+    }, 
+    {
+        "text": "Apple brandy", 
+        "value": "apple_brandy"
+    }, 
+    {
+        "text": "Malt", 
+        "value": "malt"
+    }, 
+    {
+        "text": "Frankfurter", 
+        "value": "frankfurter"
+    }, 
+    {
+        "text": "Cacao", 
+        "value": "cacao"
+    }, 
+    {
+        "text": "Rutabaga", 
+        "value": "rutabaga"
+    }, 
+    {
+        "text": "Cherry brandy", 
+        "value": "cherry_brandy"
+    }, 
+    {
+        "text": "Galanga", 
+        "value": "galanga"
+    }, 
+    {
+        "text": "Wood", 
+        "value": "wood"
+    }, 
+    {
+        "text": "Red bean", 
+        "value": "red_bean"
+    }, 
+    {
+        "text": "Juniper berry", 
+        "value": "juniper_berry"
+    }, 
+    {
+        "text": "Green tea", 
+        "value": "green_tea"
+    }, 
+    {
+        "text": "Haddock", 
+        "value": "haddock"
+    }, 
+    {
+        "text": "Flower", 
+        "value": "flower"
+    }, 
+    {
+        "text": "Black mustard seed oil", 
+        "value": "black_mustard_seed_oil"
+    }, 
+    {
+        "text": "Kumquat", 
+        "value": "kumquat"
+    }, 
+    {
+        "text": "Munster cheese", 
+        "value": "munster_cheese"
+    }, 
+    {
+        "text": "Shellfish", 
+        "value": "shellfish"
+    }, 
+    {
+        "text": "Black sesame seed", 
+        "value": "black_sesame_seed"
+    }, 
+    {
+        "text": "Prawn", 
+        "value": "prawn"
+    }, 
+    {
+        "text": "Caviar", 
+        "value": "caviar"
+    }, 
+    {
+        "text": "Chayote", 
+        "value": "chayote"
+    }, 
+    {
+        "text": "Quince", 
+        "value": "quince"
+    }, 
+    {
+        "text": "Roquefort cheese", 
+        "value": "roquefort_cheese"
+    }, 
+    {
+        "text": "Bartlett pear", 
+        "value": "bartlett_pear"
+    }, 
+    {
+        "text": "Cassava", 
+        "value": "cassava"
+    }, 
+    {
+        "text": "Licorice", 
+        "value": "licorice"
+    }, 
+    {
+        "text": "Eel", 
+        "value": "eel"
+    }, 
+    {
+        "text": "Prickly pear", 
+        "value": "prickly_pear"
+    }, 
+    {
+        "text": "Passion fruit", 
+        "value": "passion_fruit"
+    }, 
+    {
+        "text": "Mung bean", 
+        "value": "mung_bean"
+    }, 
+    {
+        "text": "Orange flower", 
+        "value": "orange_flower"
+    }, 
+    {
+        "text": "Coconut oil", 
+        "value": "coconut_oil"
+    }, 
+    {
+        "text": "Cabernet sauvignon wine", 
+        "value": "cabernet_sauvignon_wine"
+    }, 
+    {
+        "text": "Sassafras", 
+        "value": "sassafras"
+    }, 
+    {
+        "text": "Roasted meat", 
+        "value": "roasted_meat"
+    }, 
+    {
+        "text": "Sumac", 
+        "value": "sumac"
+    }, 
+    {
+        "text": "Guava", 
+        "value": "guava"
+    }, 
+    {
+        "text": "Salmon roe", 
+        "value": "salmon_roe"
+    }, 
+    {
+        "text": "Artemisia", 
+        "value": "artemisia"
+    }, 
+    {
+        "text": "Camembert cheese", 
+        "value": "camembert_cheese"
+    }, 
+    {
+        "text": "Armagnac", 
+        "value": "armagnac"
+    }, 
+    {
+        "text": "Pear brandy", 
+        "value": "pear_brandy"
+    }, 
+    {
+        "text": "Japanese plum", 
+        "value": "japanese_plum"
+    }, 
+    {
+        "text": "Concord grape", 
+        "value": "concord_grape"
+    }, 
+    {
+        "text": "Mandarin peel", 
+        "value": "mandarin_peel"
+    }, 
+    {
+        "text": "Herring", 
+        "value": "herring"
+    }, 
+    {
+        "text": "Beef liver", 
+        "value": "beef_liver"
+    }, 
+    {
+        "text": "Clove", 
+        "value": "clove"
+    }, 
+    {
+        "text": "Huckleberry", 
+        "value": "huckleberry"
+    }, 
+    {
+        "text": "Black currant", 
+        "value": "black_currant"
+    }, 
+    {
+        "text": "Litchi", 
+        "value": "litchi"
+    }, 
+    {
+        "text": "Condiment", 
+        "value": "condiment"
+    }, 
+    {
+        "text": "Gardenia", 
+        "value": "gardenia"
+    }, 
+    {
+        "text": "Baked potato", 
+        "value": "baked_potato"
+    }, 
+    {
+        "text": "Ouzo", 
+        "value": "ouzo"
+    }, 
+    {
+        "text": "Leaf", 
+        "value": "leaf"
+    }, 
+    {
+        "text": "Peppermint oil", 
+        "value": "peppermint_oil"
+    }, 
+    {
+        "text": "Grape brandy", 
+        "value": "grape_brandy"
+    }, 
+    {
+        "text": "Lingonberry", 
+        "value": "lingonberry"
+    }, 
+    {
+        "text": "Sunflower oil", 
+        "value": "sunflower_oil"
+    }, 
+    {
+        "text": "Carob", 
+        "value": "carob"
+    }, 
+    {
+        "text": "Black raspberry", 
+        "value": "black_raspberry"
+    }, 
+    {
+        "text": "Jasmine", 
+        "value": "jasmine"
+    }, 
+    {
+        "text": "Bergamot", 
+        "value": "bergamot"
+    }, 
+    {
+        "text": "Kohlrabi", 
+        "value": "kohlrabi"
+    }, 
+    {
+        "text": "Violet", 
+        "value": "violet"
+    }, 
+    {
+        "text": "Smoked fish", 
+        "value": "smoked_fish"
+    }, 
+    {
+        "text": "Spearmint", 
+        "value": "spearmint"
+    }, 
+    {
+        "text": "Pork liver", 
+        "value": "pork_liver"
+    }, 
+    {
+        "text": "Elderberry", 
+        "value": "elderberry"
+    }
+]
