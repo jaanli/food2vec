@@ -40,3 +40,6 @@ TODOs:
 * fit a better model (e.g. the exact multi-class regression implemented in this repo at [https://github.com/altosaar/food2vec/blob/master/src/food2vec.py](https://github.com/altosaar/food2vec/blob/master/src/food2vec.py)) -- if you manage to get better results than the live demo at https://altosaar.github.io/food2vec/ just submit a pull request with the new `assets/data/wordVecs.js` and I'll happily update it :)
 * compare the above model embeddings to the `word2vec_optimized.py` embeddings
 * make the UI of the website more user-friendly and mobile-friendly
+
+## Acknowledgments
+Thanks to Anthony for open-sourcing a [javascript embedding browser](https://github.com/turbomaze/word2vecjson) -- the one here is heavily based on it.
