@@ -32,6 +32,9 @@ jupyter notebook ./src/plot_ingredients_recipes.ipynb
 open index.html
 ```
 
+## Embedding plot.ly plots to host them yourself
+https://gist.github.com/altosaar/67d8456ad28acd1abb497f1950d8de8a
+
 ## Contributing
 
 Pull requests and all feedback welcome! Please file an issue if you run into problems replicating the results.
