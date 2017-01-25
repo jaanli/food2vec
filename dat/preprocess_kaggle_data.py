@@ -1,6 +1,7 @@
 import os
 import json
 import itertools
+import re
 from tqdm import tqdm
 
 def load_vocab(path):
@@ -38,6 +39,7 @@ def lookup_ingredient(vocab, ingredient):
     return ingredient
   else:
     split = ingredient.lower().replace('-', ' ').replace('%', '').split(' ')
+    split = [re.sub(r'([^\s\w]|_)+', '', x) for x in split]
     if len(split) == 1:
       return split[0]
     else:
@@ -82,7 +84,7 @@ def write_recipes(recipes, path):
 
 
 def main():
-  path = '/Users/jaanaltosaar/fit/food2vec/'
+  path = '/Users/jaanaltosaar/fit/food2vec/2017-01-20/'
   vocab = load_vocab(os.path.join(path, 'vocab.txt'))
   foods = [tup[0] for tup in vocab]
   recipes = load_recipes('./train.json')
