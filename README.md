@@ -6,6 +6,8 @@ Get the data and preprocess it:
 ```
 cd dat
 ./download_data.sh
+# get kaggle data from https://www.kaggle.com/c/whats-cooking/
+python preprocess_kaggle_data.py
 ./preprocess_data.sh
 ```
 
@@ -15,7 +17,7 @@ Train a model on the recipes dataset:
 git clone git@github.com:altosaar/food2vec.git
 cd food2vec
 git submodule update --init
-cd food2vec/src/sentence_word2vec
+cd src/sentence_word2vec
 git submodule update --init
 ./compile_ops.sh
 # run word2vec with the recipes as context
