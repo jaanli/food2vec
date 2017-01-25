@@ -84,12 +84,15 @@ def write_recipes(recipes, path):
 
 
 def main():
-  path = '/Users/jaanaltosaar/fit/food2vec/2017-01-20/'
+  # load vocab fit to http://www.nature.com/articles/srep00196wget
+  path = '../fit/nature_data_srep00196/'
   vocab = load_vocab(os.path.join(path, 'vocab.txt'))
   foods = [tup[0] for tup in vocab]
+  # load train data from https://www.kaggle.com/c/whats-cooking/download/train.json.zip
   recipes = load_recipes('./train.json')
   cuisines = set([tup[0] for tup in recipes])
   country2region = get_country2region()
+  # match the kaggle data to the nature data vocabulary
   parsed_recipes = parse_recipes(foods, country2region, recipes)
   write_recipes(parsed_recipes, 'kaggle_recipes.csv')
 
