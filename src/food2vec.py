@@ -130,7 +130,7 @@ def train():
   global words_processed
   sentence_index = 0
   words_processed = 0
-  print 'example batch: '
+  print('example batch: ')
   batch, labels = generate_batch(data, words_per_epoch, count)
   for i in range(len(batch)):
     print(batch[i], reverse_dictionary[batch[i]],
@@ -146,7 +146,7 @@ def train():
     train_labels = tf.placeholder(tf.int32, shape=[None, None])
     train_indicators = tf.one_hot(
           train_labels, depth=vocabulary_size, on_value=1, off_value=0, axis=1)
-    print train_indicators
+    print(train_indicators)
     train_indicators = tf.to_float(tf.reduce_sum(train_indicators, -1))
     valid_dataset = tf.constant(valid_examples, dtype=tf.int32)
     # Ops and variables pinned to the CPU because of missing GPU implementation
@@ -165,7 +165,7 @@ def train():
     logits = tf.matmul(example_emb, sm_w_t, transpose_b=True) + sm_b
     # Compute the average loss for the batch.
     log_lik = tf.reduce_mean(-tf.nn.sigmoid_cross_entropy_with_logits(
-        logits=logits, labels=train_indicators))
+        logits=logits, targets=train_indicators))
     regularizer_loss = (cfg['regularization'] * (
       tf.nn.l2_loss(sm_w_t) + tf.nn.l2_loss(example_emb)))
     loss = tf.reduce_mean(-log_lik) + regularizer_loss
@@ -202,7 +202,7 @@ def train():
 
     average_loss = 0.
     sentences_to_train = cfg['epochs_to_train'] * len(data)
-    for step in xrange(num_steps):
+    for step in range(num_steps):
       if step < sentences_to_train:
         batch_inputs, batch_labels = generate_batch(train_data, words_per_epoch, count)
         feed_dict = {train_inputs: batch_inputs,
@@ -235,12 +235,12 @@ def train():
         # Note that this is expensive
         if step % 10000 == 0:
           sim = similarity.eval()
-          for i in xrange(valid_size):
+          for i in range(valid_size):
             valid_word = reverse_dictionary[valid_examples[i]]
             top_k = 8  # number of nearest neighbors
             nearest = (-sim[i, :]).argsort()[1:top_k + 1]
             log_str = "Nearest to %s:" % valid_word
-            for k in xrange(top_k):
+            for k in range(top_k):
               close_word = reverse_dictionary[nearest[k]]
               log_str = "%s %s," % (log_str, close_word)
             print(log_str)
