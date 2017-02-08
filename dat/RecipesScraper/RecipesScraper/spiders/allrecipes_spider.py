@@ -10,7 +10,7 @@ class AllRecipesSpider(scrapy.Spider):
     """Spider to scrape All Recipes (allrecipes.com)"""
     name = "allrecipes"
 
-    with open("sitemap/allrecipes_seed_list.txt") as seedfile:
+    with open("sitemap/seed_lists/allrecipes_seed_list.txt") as seedfile:
         start_urls = ["{}?page=1".format(url.strip()) for url in seedfile.readlines()]
 
     def parse(self, response):
