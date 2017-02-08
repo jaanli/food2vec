@@ -33,7 +33,8 @@ class AllRecipesSpider(scrapy.Spider):
     def parse_recipe(self, response):
         """Parse the recipe to get title and ingredients."""
         recipe_name = self.remove_non_ascii(response.css("h1.recipe-summary__h1::text").extract_first())
-        ingredients = response.css("span.recipe-ingred_txt::text").extract()
+        ingredients = filter(lambda ingredient: ingredient != u'Add all ingredients to list',
+                             response.css("span.recipe-ingred_txt::text").extract())
         recipe_tags = [li.css("span::text").extract_first().strip() for li in response.css("ul.breadcrumbs li")]
         #recipe_tags = all_tags[(all_tags.index("World Cuisine") + 1):]
         self.log("Scraped {}".format(recipe_name))
