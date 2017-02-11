@@ -6,6 +6,7 @@ This folder contains various spider to scrape different recipe websites.
 
 * [All Recipes](http://allrecipes.com/)
 * [Jamie Oliver](http://www.jamieoliver.com/)
+* [Epicurious](http://www.epicurious.com/)
 
 ## Running a spider
 
