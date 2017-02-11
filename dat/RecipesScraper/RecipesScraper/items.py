@@ -7,3 +7,4 @@ class RecipeItem(scrapy.Item):
     recipe = scrapy.Field()
     ingredients = scrapy.Field()
     tags = scrapy.Field()
+    url = scrapy.Field()
