@@ -55,7 +55,7 @@ def get_seed_list(xml_file, base_url, url_part=""):
     base_url : str
         The base url of the website being scraped
     url_part : str
-        A part of the url to match in the full url
+        A part of the url to match in
 
     Returns
     -------
@@ -127,6 +127,35 @@ def get_leaf_node_attribute(tree, attribute):
     return leaf_nodes
 
 
+def get_recursive_site_list(base_url):
+    """Recursively get the list of recipes from epicurious.
+
+    Parameters
+    ----------
+    base_url : str
+        The url to start the recursive calls at
+
+    Returns
+    -------
+    list
+        A list of all of the recipe urls
+    """
+    try:
+        root = ElementTree.fromstring("\n".join(urllib2.urlopen(base_url).readlines()))
+
+        url_list = []
+        for child in root:
+            full_url = child[0].text
+            if "?" in full_url:
+                url_list += get_recursive_site_list(full_url)
+            else:
+                url_list.append(full_url)
+
+        return url_list
+    except:
+        return []
+
+
 def get_and_parse_allrecipes_sitemap():
     """Get and parse the allrecipes sitemap."""
     # Sitemap:  http://allrecipes.com/gsindex.xml
@@ -167,7 +196,22 @@ def get_and_parse_myrecipes_sitemap():
         outfile.write("\n".join(seed_list))
 
 
+def get_and_parse_epicurious_sitemap():
+    """Get and parse the epicurious sitemap."""
+    member_recipes = get_recursive_site_list(
+        "http://www.epicurious.com/sitemap.xml/member-recipes"
+    )
+    editorial_recipes = get_recursive_site_list(
+        "http://www.epicurious.com/sitemap.xml/editorial-recipes"
+    )
+
+    seed_list = member_recipes + editorial_recipes
+    with open("seed_lists/epicurious_seed_list.txt", "ab") as outfile:
+        outfile.write("\n".join(seed_list))
+
+
 if __name__ == "__main__":
     get_and_parse_allrecipes_sitemap()
     get_and_parse_jamieoliver_sitemap()
     get_and_parse_myrecipes_sitemap()
+    get_and_parse_epicurious_sitemap()
