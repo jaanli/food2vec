@@ -77,7 +77,7 @@ def lookup_ingredient(vocab, ingredient):
       return split[0]
     else:
       full = []
-      for i in range(1, len(split)):
+      for i in range(len(split) - 1, 0, -1):
         for permutation in itertools.permutations(split, i):
           full.append('_'.join(permutation))
       match = next((perm for perm in full if perm in vocab), None)
