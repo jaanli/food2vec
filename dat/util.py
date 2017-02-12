@@ -1,4 +1,4 @@
-import os
+"""Utility functions for parsing recipes datasets."""
 import json
 import itertools
 import re
@@ -10,9 +10,9 @@ from nltk.corpus import stopwords
 def load_vocab(path):
   vocab = []
   with open(path, 'r') as f:
-      for line in f.readlines():
-          split = line.split(' ')
-          vocab.append((split[0], int(split[1].rstrip())))
+    for line in f.readlines():
+      split = line.split(' ')
+      vocab.append((split[0], int(split[1].rstrip())))
   # ignore UNK at position 0
   return vocab[1:]
 
@@ -21,7 +21,8 @@ def load_recipes(path):
   with open(path, 'r') as f:
     data = json.load(f)
   enc = lambda x: x.encode('ascii', 'ignore')
-  recipes = [(enc(item['cuisine']), list(map(enc, item['ingredients']))) for item in data]
+  recipes = [(enc(item['cuisine']), list(map(enc, item['ingredients']))) \
+      for item in data]
   to_str = lambda x: x.decode('utf-8', 'ignore')
   recipes = [(to_str(item[0]), list(map(to_str, item[1]))) for item in recipes]
   return recipes
@@ -42,14 +43,14 @@ def parse_recipes(vocab, country2region, recipes):
 def parse_recipe(vocab, country2region, recipe):
   cuisine, ingredients = recipe
   mapped = [lookup_ingredient(vocab, ingredient) for ingredient in ingredients]
-  if len(mapped) >=2:
+  if len(mapped) >= 2:
     return (country2region[cuisine], mapped)
 
 
 def parse_recipes_parallel(vocab, country2region, recipes):
   parsed = joblib.Parallel(n_jobs=8, verbose=50)(
       joblib.delayed(parse_recipe)(
-        vocab, country2region, recipe) for recipe in recipes)
+          vocab, country2region, recipe) for recipe in recipes)
   return [item for item in parsed if item is not None]
 
 
@@ -62,7 +63,7 @@ def parse_ingredients(vocab, ingredients):
 def parse_ingredients_parallel(vocab, ingredients_lists):
   parsed = joblib.Parallel(n_jobs=8, verbose=50)(
       joblib.delayed(parse_ingredients)(
-        vocab, ingredients) for ingredients in ingredients_lists)
+          vocab, ingredients) for ingredients in ingredients_lists)
   return [item for item in parsed if item is not None]
 
 
