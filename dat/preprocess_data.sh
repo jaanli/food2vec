@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# append kaggle recipes to nature recipes
+# concatenate all datasets
 cp srep00196-s3.csv all-recipes.csv
 cat kaggle_recipes.csv >> all-recipes.csv
+cat allrecipes_recipes.csv >> all-recipes.csv
+cat jamieoliver_recipes.csv >> all-recipes.csv
 
 # remove first four lines
 tail -n+4 all-recipes.csv > recipes

@@ -8,6 +8,7 @@ cd dat
 ./download_data.sh
 # get kaggle data from https://www.kaggle.com/c/whats-cooking/
 python preprocess_kaggle_data.py
+python preprocess_scraped_data.py
 ./preprocess_data.sh
 ```
 
@@ -42,6 +43,9 @@ https://gist.github.com/altosaar/67d8456ad28acd1abb497f1950d8de8a
 Pull requests and all feedback welcome! Please file an issue if you run into problems replicating the results.
 
 TODOs:
+* get more data
+* convert jupyter notebook for plotting into one python script
+* write a script to figure out the right vocabulary
 * fit a better model (e.g. the exact multi-class regression implemented in this repo at [https://github.com/altosaar/food2vec/blob/master/src/food2vec.py](https://github.com/altosaar/food2vec/blob/master/src/food2vec.py)) -- if you manage to get better results than the live demo at https://altosaar.github.io/food2vec/ just submit a pull request with the new `assets/data/wordVecs.js` and I'll happily update it :)
 * compare the above model embeddings to the `word2vec_optimized.py` embeddings
 * make the UI of the website more user-friendly and mobile-friendly
