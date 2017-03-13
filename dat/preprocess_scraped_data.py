@@ -2,14 +2,16 @@
 import re
 import json
 import util
+import os
 
 
 def load_ingredients_lists(path):
   with open(path, 'r') as f:
-    raw = f.readlines()
-    string = "[" + ",".join(raw) + "]"
-    recipe_list = json.loads(string)
-    res = [recipe['ingredients'][:-2] for recipe in recipe_list]
+    data_dict = json.loads(f.read())
+    recipe_list = data_dict['recipes']
+    res = [recipe['ingredients'] for recipe in recipe_list]
+    res = [x for x in res if len(x) > 0]
+    res = list(filter(lambda x: not x[-1].lower().startswith('equ'), res))
     alphanum = lambda x: re.sub("[^a-zA-Z]", " ", x).strip().lower()
     res = [list(map(alphanum, l)) for l in res]
     flatten = lambda l: [item for sublist in l for item in sublist]
@@ -17,7 +19,7 @@ def load_ingredients_lists(path):
     return [l for l in res if len(l) >= 2]
 
 
-def parse_scraped_site(json_path, out_path):
+def parse_scraped_site(in_path, out_path):
   """load vocab fit to nature and kaggle data
   from
   http://www.nature.com/articles/srep00196wget
@@ -26,7 +28,7 @@ def parse_scraped_site(json_path, out_path):
   """
   vocab = util.load_vocab('../fit/nature_and_kaggle_vocab.txt')
   foods = [tup[0] for tup in vocab]
-  ingredients_lists = load_ingredients_lists(json_path)
+  ingredients_lists = load_ingredients_lists(in_path)
   # ingredients_lists = ingredients_lists[0:1000]  # for debugging
   ingredients_lists = [util.filter_stopwords(l) for l in ingredients_lists]
   print(ingredients_lists[0])
@@ -37,12 +39,14 @@ def parse_scraped_site(json_path, out_path):
 
 
 def main():
-  parse_scraped_site(
-      json_path='./RecipesScraper/output/allrecipes_recipes.json',
-      out_path='allrecipes_recipes.csv')
-  parse_scraped_site(
-      json_path='./RecipesScraper/output/jamieoliver_recipes.json',
-      out_path='jamieoliver_recipes.csv')
+  for root, dirname, filenames in os.walk('./RecipesScraper/output'):
+    for filename in filenames:
+      name, ext = os.path.splitext(filename)
+      out_path = os.path.join('./processed', name)
+      if not os.path.exists(out_path):
+        parse_scraped_site(
+            in_path=os.path.join(root, filename),
+            out_path=out_path)
 
 
 if __name__ == '__main__':
