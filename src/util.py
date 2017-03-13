@@ -40,8 +40,15 @@ def parse_recipes(vocab, country2region, recipes):
   return parsed_recipes
 
 
+def filter_ingredients(ingredients):
+  res = [x for x in ingredients if len(x) > 2]
+  res = filter_stopwords(res)
+  return res
+
+
 def parse_recipe(vocab, country2region, recipe):
   cuisine, ingredients = recipe
+  ingredients = filter_ingredients(ingredients)
   mapped = [lookup_ingredient(vocab, ingredient) for ingredient in ingredients]
   if len(mapped) >= 2:
     return (country2region[cuisine], mapped)
@@ -95,7 +102,7 @@ def write_recipes(recipes, path):
 
 
 def filter_stopwords(lst):
-  with open('blacklist.txt', 'r') as f:
+  with open('../dat/blacklist.txt', 'r') as f:
     blacklist = f.read().splitlines()
   stop = set(stopwords.words('english') + blacklist)
   res = []

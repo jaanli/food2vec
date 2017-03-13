@@ -6,7 +6,6 @@ Get the data and preprocess it:
 ```
 cd dat
 ./download_data.sh
-# get kaggle data from https://www.kaggle.com/c/whats-cooking/
 python preprocess_kaggle_data.py
 python preprocess_scraped_data.py
 ./preprocess_data.sh
