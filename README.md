@@ -1,50 +1,30 @@
 # food2vec
 Food vectors. Live demo at [https://altosaar.github.io/food2vec/](https://altosaar.github.io/food2vec/), blog post with more information and pretty plots here: https://jaan.io/food2vec-augmented-cooking-machine-intelligence/
 
-## Data
-Get the data and preprocess it:
-```
-cd dat
-./download_data.sh
-python preprocess_kaggle_data.py
-python preprocess_scraped_data.py
-./preprocess_data.sh
-```
-
 ## Usage
-Train a model on the recipes dataset:
+Train a model on the recipes dataset, replicate the results from the [blog post](https://jaan.io/food2vec-augmented-cooking-machine-intelligence/):
 ```
 git clone git@github.com:altosaar/food2vec.git
-cd food2vec
-git submodule update --init
-cd src/sentence_word2vec
-git submodule update --init
-./compile_ops.sh
-# run word2vec with the recipes as context
-python word2vec_optimized.py --train_data ../../dat/recipes --interactive --save_path /tmp --subsample 0 --eval 0 --interactive --embedding_size 100
+cd food2vec/src
+./blog_experiment.sh
 ```
 
 ## Visualization & embedding exploration tools
 ```
-# make the t-SNE plot
-cd ../../
 # run t-sne and make the plots for the ingredient embeddings
 jupyter notebook ./src/plot_ingredients_recipes.ipynb
-# view the analogy tool on a browser
-open index.html
 ```
 
 ## Embedding plot.ly plots to host them yourself
 https://gist.github.com/altosaar/67d8456ad28acd1abb497f1950d8de8a
 
 ## Contributing
-
 Pull requests and all feedback welcome! Please file an issue if you run into problems replicating the results.
 
 TODOs:
 * get more data
 * convert jupyter notebook for plotting into one python script
-* write a script to figure out the right vocabulary
+* write scripts to figure out the right vocabulary
 * fit a better model (e.g. the exact multi-class regression implemented in this repo at [https://github.com/altosaar/food2vec/blob/master/src/food2vec.py](https://github.com/altosaar/food2vec/blob/master/src/food2vec.py)) -- if you manage to get better results than the live demo at https://altosaar.github.io/food2vec/ just submit a pull request with the new `assets/data/wordVecs.js` and I'll happily update it :)
 * compare the above model embeddings to the `word2vec_optimized.py` embeddings
 * make the UI of the website more user-friendly and mobile-friendly
