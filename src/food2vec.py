@@ -108,7 +108,8 @@ def get_sentence_inputs(sentence, vocabulary_size):
   batch_size = sentence_len * (sentence_len - 1)
   # batch = np.repeat(sentence, context_size)
   batch = np.asarray(sentence, dtype=np.int32)
-  labels = np.asarray([list(sentence_set - set([w])) for w in sentence], dtype=np.int32)
+  labels = np.asarray(
+      [list(sentence_set - set([w])) for w in sentence], dtype=np.int32)
   # classes = [np.zeros(vocabulary_size, dtype=np.int32)] * sentence_len
   # for i in range(len(raw_labels)):
   #   classes[i][raw_labels[i]] = 1
@@ -217,7 +218,7 @@ def train():
         if step % 2000 == 0:
           if step > 0:
             average_loss /= 2000
-          # The average loss is an estimate of the loss over the last 2000 batches.
+          # average loss is an estimate of the loss over the last 2000 batches.
           print("Average train loss at step %d: %.3e" % (step, average_loss))
           average_loss = 0.
 
@@ -225,9 +226,11 @@ def train():
         if step % sentences_per_epoch == 0 and step > 0:
           vad_log_lik = 0.
           for sentence in vad_data:
-            batch_inputs, batch_labels = get_sentence_inputs(sentence, vocabulary_size)
+            batch_inputs, batch_labels = get_sentence_inputs(
+                sentence, vocabulary_size)
             log_lik_val = session.run(
-                log_lik, {train_inputs: batch_inputs, train_labels: batch_labels})
+                log_lik,
+                {train_inputs: batch_inputs, train_labels: batch_labels})
             vad_log_lik += np.sum(log_lik_val)
           print("Average validation log-likelihood at step %d: %.3e" %
               (step, vad_log_lik / len(vad_data)))
