@@ -31,7 +31,6 @@ def parse_scraped_site(in_path, out_path):
   ingredients_lists = load_ingredients_lists(in_path)
   # ingredients_lists = ingredients_lists[0:1000]  # for debugging
   ingredients_lists = [util.filter_stopwords(l) for l in ingredients_lists]
-  print(ingredients_lists[0])
   parsed_ingredients = util.parse_ingredients_parallel(foods, ingredients_lists)
   parsed_recipes = [("Unknown", ingredients) for \
       ingredients in parsed_ingredients]
@@ -42,7 +41,7 @@ def main():
   for root, dirname, filenames in os.walk('./RecipesScraper/output'):
     for filename in filenames:
       name, ext = os.path.splitext(filename)
-      out_path = os.path.join('./processed', name)
+      out_path = os.path.join('./processed', name + '.csv')
       if not os.path.exists(out_path):
         parse_scraped_site(
             in_path=os.path.join(root, filename),

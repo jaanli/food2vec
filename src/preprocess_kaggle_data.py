@@ -31,7 +31,7 @@ def main():
   # load vocab fit to http://www.nature.com/articles/srep00196wget
   vocab = util.load_vocab('../fit/nature_and_kaggle_vocab.txt')
   foods = [tup[0] for tup in vocab]
-  recipes = util.load_recipes('./train.json')
+  recipes = util.load_recipes('../dat/train.json')
   recipes = [recipe for recipe in recipes if len(recipe[1]) < 30]
   # recipes = recipes[0:1000]  # debug on smaller dataset
   country2region = get_country2region()
