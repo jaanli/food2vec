@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # create the training set
-./process_kaggle_nature.sh
+# ./process_kaggle_nature.sh
 
 # get the sentence_word2vec module and compile the custom ops
 git submodule update --init
