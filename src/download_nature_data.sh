@@ -6,4 +6,3 @@ unzip srep00196-s3.zip
 tail -n+5 srep00196-s3.csv > ../dat/processed/nature_data.csv
 
 rm srep00196-s3.*
-
