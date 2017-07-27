@@ -20,10 +20,12 @@ def load_vocab(path):
 def load_recipes(path):
   with open(path, 'r') as f:
     data = json.load(f)
-  enc = lambda x: x.encode('ascii', 'ignore')
-  recipes = [(enc(item['cuisine']), list(map(enc, item['ingredients']))) \
-      for item in data]
-  to_str = lambda x: x.decode('utf-8', 'ignore')
+
+  def enc(x): return x.encode('ascii', 'ignore')
+  recipes = [(enc(item['cuisine']), list(map(enc, item['ingredients'])))
+             for item in data]
+
+  def to_str(x): return x.decode('utf-8', 'ignore')
   recipes = [(to_str(item[0]), list(map(to_str, item[1]))) for item in recipes]
   return recipes
 

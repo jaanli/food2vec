@@ -1,3 +1,6 @@
 [submodule "src/sentence_word2vec"]
 	path = src/sentence_word2vec
 	url = https://github.com/altosaar/sentence_word2vec.git
+[submodule "src/fastText"]
+	path = src/fastText
+	url = https://github.com/altosaar/fastText
