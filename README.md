@@ -5,6 +5,13 @@ Food vectors. Live demo at [https://altosaar.github.io/food2vec/](https://altosa
 Train a model on the recipes dataset, replicate the results from the [blog post](https://jaan.io/food2vec-augmented-cooking-machine-intelligence/):
 ```
 git clone git@github.com:altosaar/food2vec.git
+echo "[submodule "src/sentence_word2vec"]
+        path = src/sentence_word2vec
+        url = https://github.com/altosaar/sentence_word2vec.git
+[submodule "src/fastText"]
+        path = src/fastText
+        url = https://github.com/altosaar/fastText" > .gitmodules
+git submodule update --init
 cd food2vec/src
 ./blog_experiment.sh
 ```
