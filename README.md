@@ -1,5 +1,5 @@
 # food2vec
-Food vectors. Live demo at [https://altosaar.github.io/food2vec/](https://altosaar.github.io/food2vec/), blog post with more information and pretty plots here: https://jaan.io/food2vec-augmented-cooking-machine-intelligence/
+Food vectors. Live demo at [https://altosaar.github.io/food2vec/](https://altosaar.github.io/food2vec/), blog post with more information and plots here: https://jaan.io/food2vec-augmented-cooking-machine-intelligence/
 
 ## Usage
 Train a model on the recipes dataset, replicate the results from the [blog post](https://jaan.io/food2vec-augmented-cooking-machine-intelligence/):
