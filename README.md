@@ -4,6 +4,8 @@ Food vectors. Live demo at [https://altosaar.github.io/food2vec/](https://altosa
 ## Usage
 Train a model on the recipes dataset, replicate the results from the [blog post](https://jaan.io/food2vec-augmented-cooking-machine-intelligence/):
 ```
+conda env create -f environment.yml
+conda activate food2vec
 git clone git@github.com:altosaar/food2vec.git
 echo "[submodule \"src/sentence_word2vec\"]
         path = src/sentence_word2vec
