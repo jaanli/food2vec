@@ -21,8 +21,8 @@ cd ..
   -wordNgrams 0 \
   -minn 0 -maxn 0 -thread 8 -t 1 -lrUpdateRate 100 -saveOutput 1
 
-tail -n+3 $RESULTDIR/model_$NAME.vec > $RESULTDIR/vectors_$NAME.txt
+tail -n+3 $RESULTDIR/model.vec > $RESULTDIR/vectors.txt
 
-python ./fastText/eval_interactive.py -m "${RESULTDIR}"/vectors_$NAME.txt
+python ./fastText/eval_interactive.py -m "${RESULTDIR}"/vectors.txt
 # usage: commands include nearest('beef'), nearest('banana') for example
 
